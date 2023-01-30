@@ -3,13 +3,12 @@ import ArrowDown from "./_components/_icons/ArrowDown";
 export default function Page() {
   return (
     <main>
-      <div className="bg-zinc-900">
-        
+      <div>
 
         {/* home-landing */}
         <div className="h-screen flex flex-col items-center">
           <div className="h-5/6 w-5/6 flex flex-row flex-wrap-reverse justify-evenly items-center">
-            <div className="flex flex-col justify-center items-center text-center text-white">
+            <div className="flex flex-col justify-center items-center gap-4 text-center text-white">
               <h1 className="text-4xl font-bold">Doddy Sujatmiko</h1>
               <h2 className="text-xl">Just a 19 y/o kid trying to conquer the world.</h2>
             </div>
@@ -17,7 +16,7 @@ export default function Page() {
                 <img className="rounded-full" src="https://github.com/doddy-s.png" alt="Should be an icon here" />
             </div>
           </div>
-          <div className="h-1/6 flex flex-col justify-end items-center">
+          <div className="h-1/6 flex flex-col justify-end items-center motion-safe:animate-bounce">
             <h1 className="text-center text-ssm text-white font-bold">Scroll Down!!</h1>
             <ArrowDown />
           </div>
@@ -25,11 +24,11 @@ export default function Page() {
 
         {/* home-skills */}
         <div className="h-screen flex flex-col items-center">
-          <div className="h-5/6 flex flex-col justify-center items-center text-center text-white">
+          <div className="h-5/6 flex flex-col justify-center items-center gap-4 text-center text-white">
             <h1 className="text-4xl font-bold">I CAN DO WHAT I CAN DO.</h1>
-            <h2 className="text-xl">Check out my skills here!</h2>
+            <h2 className="text-xl">Check out my skills <a href="/skills" className="text-green-500 hover:animate-pulse">here</a>!</h2>
           </div>
-          <div className="h-1/6 flex flex-col justify-end items-center">
+          <div className="h-1/6 flex flex-col justify-end items-center motion-safe:animate-bounce">
             <h1 className="text-center text-ssm text-white font-bold">Scroll Down!!</h1>
             <ArrowDown />
           </div>
@@ -37,11 +36,11 @@ export default function Page() {
 
         {/* home-hobbies */}
         <div className="h-screen flex flex-col items-center">
-          <div className="h-5/6 flex flex-col justify-center items-center text-center text-white">
+          <div className="h-5/6 flex flex-col justify-center items-center gap-4 text-center text-white">
             <h1 className="text-4xl font-bold">I LOVE THESE THINGS.</h1>
-            <h2 className="text-xl">Take a peek on it!</h2>
+            <h2 className="text-xl">Take a <a href="/hobbies" className="text-green-500 hover:animate-pulse">peek</a> on my hobbies!</h2>
           </div>
-          <div className="h-1/6 flex flex-col justify-end items-center">
+          <div className="h-1/6 flex flex-col justify-end items-center motion-safe:animate-bounce">
             <h1 className="text-center text-ssm text-white font-bold">Scroll Down!!</h1>
             <ArrowDown />
           </div>
@@ -50,12 +49,12 @@ export default function Page() {
 
         {/* home-cp */}
         <div className="h-screen flex flex-col items-center">
-          <div className="h-5/6 flex flex-col justify-center items-center text-center text-white">
+          <div className="h-5/6 flex flex-col justify-center items-center gap-4 text-center text-white">
             <h1 className="text-4xl font-bold">FELL IN LOVE WITH ME YET?</h1>
-            <h2 className="text-xl">Here`s my number. Wait!, I meant my contacts.</h2>
+            <h2 className="text-xl">Here`s how to <a href="/contacts" className="text-green-500 hover:animate-pulse">contact</a> me.</h2>
           </div>
           <div className="h-1/6 flex flex-col justify-end items-center">
-            <h1 className="text-center text-ssm text-white font-bold">Finn</h1>
+            <h1 className="text-center text-ssm text-white font-bold">Fin</h1>
           </div>
         </div>
         
