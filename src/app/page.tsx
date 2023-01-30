@@ -1,6 +1,6 @@
 import ArrowDown from "./_components/_icons/ArrowDown";
 
-export default function Home() {
+export default function Page() {
   return (
     <main>
       <div className="bg-zinc-900">
