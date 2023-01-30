@@ -4,6 +4,7 @@ export default function Home() {
   return (
     <main>
       <div className="bg-zinc-900">
+        
 
         {/* home-landing */}
         <div className="h-screen flex flex-col items-center">
@@ -50,8 +51,8 @@ export default function Home() {
         {/* home-cp */}
         <div className="h-screen flex flex-col items-center">
           <div className="h-5/6 flex flex-col justify-center items-center text-center text-white">
-            <h1 className="text-4xl font-bold">FALL IN LOVE WITH ME YET?</h1>
-            <h2 className="text-xl">Here’s my number. Wait!, I meant my contacts.</h2>
+            <h1 className="text-4xl font-bold">FELL IN LOVE WITH ME YET?</h1>
+            <h2 className="text-xl">Here`s my number. Wait!, I meant my contacts.</h2>
           </div>
           <div className="h-1/6 flex flex-col justify-end items-center">
             <h1 className="text-center text-ssm text-white font-bold">Finn</h1>

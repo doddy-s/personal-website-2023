@@ -20,6 +20,8 @@ const rust = <Rust />;
 const tailwindcss = <Tailwindcss />;
 const TS = <TypeScript />;
 
+//N0YVc1PfXKAZDVMP
+
 
 export default function skills() {
     return (
@@ -29,7 +31,7 @@ export default function skills() {
                 {/* skills-landing */}
                 <div className="h-screen flex flex-col justify-evenly items-center">
                     <div className="h-5/6 w-5/6 flex flex-row justify-center items-center">
-                        <h1 className="text-4xl font-bold text-center text-white">HERE`S PROGRAMMING LANGUAGES I`VE BEEN LEARNING.</h1>
+                        <h1 className="text-4xl font-bold text-center text-white">HERE`S PROGRAMMING LANGUAGES AND TECHNOLOGIES I`VE BEEN LEARNING.</h1>
                     </div>
                     <div className="h-1/6 flex flex-col justify-end items-center">
                         <h1 className="text-center text-ssm text-white font-bold">Scroll Down!!</h1>
