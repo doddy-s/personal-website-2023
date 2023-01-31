@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 export default function NavBar() {
     return (
         <div className="fixed top-0 w-screen h-12 px-8 m-0 flex flex-row justify-between md:justify-start items-center gap-1 md:gap-4 bg-black bg-opacity-50 text-white shadow backdrop-blur-md">
@@ -19,7 +21,9 @@ const Button = ({ content, route, logo }: any) => (
         hover:bg-white
         hover:text-black">
             <p className="collapse md:visible">{ content }</p>
-            <img className="visible md:collapse w-6 h-6 fill-white" src={ logo }/>
+            <Image className="visible md:collapse fill-white" 
+            src={ logo } alt="myface" 
+            width={24} height={24}/>
         </div>
     </a>
     
