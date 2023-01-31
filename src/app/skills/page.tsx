@@ -12,14 +12,14 @@ export default async function Page() {
     const databases = await supabase.from('programming').select("*").eq("type", 3)
     return (
         <main>
-            <div className="bg-zinc-900">
+            <div>
 
                 {/* skills-landing */}
                 <div className="h-screen flex flex-col justify-evenly items-center">
                     <div className="h-5/6 w-5/6 flex flex-row justify-center items-center">
                         <h1 className="text-4xl font-bold text-center text-white">HERE`S PROGRAMMING LANGUAGES AND TECHNOLOGIES I`VE BEEN LEARNING.</h1>
                     </div>
-                    <div className="h-1/6 flex flex-col justify-end items-center">
+                    <div className="h-1/6 flex flex-col justify-end items-center animate-bounce">
                         <h1 className="text-center text-ssm text-white font-bold">Scroll Down!!</h1>
                         <ArrowDown />
                     </div>
@@ -33,14 +33,12 @@ export default async function Page() {
                             <div className="flex flex-row flex-wrap justify-evenly items-center mx-8 my-8">
                                 {webs.data?.map((i:any) => (
                                     <SkillBox key={ i.id }
-                                    name={ i.name } 
-                                    date={ i.learning_since }
-                                    logo={ i.logo } />
+                                    obj={ i } />
                                 ))}
                             </div>
                         </div>
                     </div>
-                    <div className="h-1/6 flex flex-col justify-end items-center">
+                    <div className="h-1/6 flex flex-col justify-end items-center animate-bounce">
                         <h1 className="text-center text-ssm text-white font-bold"></h1>
                         <ArrowDown />
                     </div>
@@ -54,14 +52,12 @@ export default async function Page() {
                             <div className="flex flex-row flex-wrap justify-evenly items-center mx-8 my-8">
                                 {desktops.data?.map((i:any) => (
                                     <SkillBox key={ i.id }
-                                    name={ i.name } 
-                                    date={ i.learning_since }
-                                    logo={ i.logo } />
+                                    obj={ i } />
                                 ))}
                             </div>
                         </div>
                     </div>
-                    <div className="h-1/6 flex flex-col justify-end items-center">
+                    <div className="h-1/6 flex flex-col justify-end items-center animate-bounce">
                         <h1 className="text-center text-ssm text-white font-bold"></h1>
                         <ArrowDown />
                     </div>
@@ -75,14 +71,12 @@ export default async function Page() {
                             <div className="flex flex-row flex-wrap justify-evenly items-center mx-8 my-8">
                                 {databases.data?.map((i:any) => (
                                     <SkillBox key={ i.id }
-                                    name={ i.name } 
-                                    date={ i.learning_since }
-                                    logo={ i.logo } />
+                                    obj={ i } />
                                 ))}
                             </div>
                         </div>
                     </div>
-                    <div className="h-1/6 flex flex-col justify-end items-center">
+                    <div className="h-1/6 flex flex-col justify-end items-center animate-bounce">
                         <h1 className="text-center text-ssm text-white font-bold"></h1>
                         <ArrowDown />
                     </div>
@@ -96,9 +90,7 @@ export default async function Page() {
                             <div className="flex flex-row flex-wrap justify-evenly items-center mx-8 my-8">
                                 {multipurposes.data?.map((i:any) => (
                                     <SkillBox key={ i.id }
-                                    name={ i.name } 
-                                    date={ i.learning_since }
-                                    logo={ i.logo } />
+                                    obj={ i } />
                                 ))}
                             </div>
                         </div>
