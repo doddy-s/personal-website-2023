@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function SkillBox({ obj }: any) {
     return (
-        <a href={ obj.hyperlink } target="_blank" rel="noopener">
+        <a href={ obj.hyperlink } target="_blank" rel="noreferrer">
             <div className="w-72 h-28 p-4 m-4 rounded-md flex flex-row justify-between 
             bg-black hover:bg-white hover:backdrop-blur-sm hover:scale-110 duration-200 
             text-white hover:text-black
