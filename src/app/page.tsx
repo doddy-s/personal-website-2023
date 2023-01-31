@@ -13,7 +13,7 @@ export default function Page() {
               <h2 className="text-xl">Just a 19 y/o kid trying to conquer the world.</h2>
             </div>
             <div>
-                <img className="rounded-full" src="https://github.com/doddy-s.png" alt="Should be an icon here" />
+                <img className="rounded-full border-8 border-white hover:border-green-500 duration-1000" src="https://github.com/doddy-s.png" alt="Should be an icon here" />
             </div>
           </div>
           <div className="h-1/6 flex flex-col justify-end items-center motion-safe:animate-bounce">
@@ -54,7 +54,7 @@ export default function Page() {
             <h2 className="text-xl">Here`s how to <a href="/contacts" className="text-green-500 hover:animate-pulse">contact</a> me.</h2>
           </div>
           <div className="h-1/6 flex flex-col justify-end items-center">
-            <h1 className="text-center text-ssm text-white font-bold">Fin</h1>
+            <h1 className="text-center text-ssm text-white font-bold">Fin.</h1>
           </div>
         </div>
         

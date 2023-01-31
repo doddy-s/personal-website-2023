@@ -15,9 +15,11 @@ export default function RootLayout({
         head.tsx. Find out more at https://beta.nextjs.org/docs/api-reference/file-conventions/head
       */}
       <head />
-      <body className="bg-fixed bg-gradient-to-t from-black to-gray-800">
+      <body className="bg-fixed bg-gradient-to-t from-gray-800 to-black">
         <NavBar />
+        <div className="px-8">
           {children}
+        </div>
       </body>
     </html>
   );
