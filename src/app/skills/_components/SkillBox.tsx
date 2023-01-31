@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 export default function SkillBox({ obj }: any) {
     return (
         <a href={ obj.hyperlink } target="_blank">
@@ -6,7 +8,7 @@ export default function SkillBox({ obj }: any) {
             text-white hover:text-black
             shadow-2xl">
                 <div className="flex w-20 h-20 mr-8 items-center justify-center">
-                    <img src={ obj.logo } alt="INI LOGO" />
+                    <Image src={ obj.logo } alt="INI LOGO" width={80} height={80} />
                 </div>
                 <div className="text-right">
                     <h1 className="text-2xl text-bold">{ obj.name }</h1>

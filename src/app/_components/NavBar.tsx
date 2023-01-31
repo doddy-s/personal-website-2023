@@ -21,9 +21,9 @@ const Button = ({ content, route, logo }: any) => (
         hover:bg-white
         hover:text-black">
             <p className="collapse md:visible">{ content }</p>
-            <Image className="visible md:collapse fill-white" 
-            src={ logo } alt="myface" 
-            width={24} height={24}/>
+            <div className="visible md:collapse fill-white">
+                <Image src={ logo } alt="logo" width={24} height={24}/>
+            </div>
         </div>
     </a>
     
@@ -31,6 +31,7 @@ const Button = ({ content, route, logo }: any) => (
 
 const Icon = () => (
     <div className="w-10 h-10">
-        <img className="rounded-full border-2 border-white hover:border-green-500 duration-1000" src="https://github.com/doddy-s.png" alt="Should be an icon here" />
+        <Image className="w-10 h-10 rounded-full border-2 border-white hover:border-green-500 duration-1000" 
+        src="https://github.com/doddy-s.png" alt="My face" width={40} height={40}/>
     </div>
 );

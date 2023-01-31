@@ -1,4 +1,5 @@
 import ArrowDown from "./_components/_icons/ArrowDown";
+import Image from "next/image";
 
 export default function Page() {
   return (
@@ -13,7 +14,9 @@ export default function Page() {
               <h2 className="text-xl">Just a 19 y/o kid trying to conquer the world.</h2>
             </div>
             <div>
-                <img className="rounded-full border-8 border-white hover:border-green-500 duration-1000" src="https://github.com/doddy-s.png" alt="Should be an icon here" />
+                <Image className="h-96 w-96 rounded-full border-8 border-white hover:border-green-500 duration-1000" 
+                src="https://github.com/doddy-s.png" alt="Should be an icon here" 
+                width={420} height={420} />
             </div>
           </div>
           <div className="h-1/6 flex flex-col justify-end items-center motion-safe:animate-bounce">
