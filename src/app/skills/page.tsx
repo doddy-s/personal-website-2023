@@ -18,7 +18,7 @@ export default async function Page() {
                 {/* skills-landing */}
                 <div className="h-screen flex flex-col justify-evenly items-center">
                     <div className="h-5/6 w-5/6 flex flex-row justify-center items-center">
-                        <h1 className="text-4xl font-bold text-center text-white">HERE`S PROGRAMMING LANGUAGES AND TECHNOLOGIES I`VE BEEN LEARNING.</h1>
+                        <h1 className="text-4xl font-bold text-center text-white">HERE&apos;S PROGRAMMING LANGUAGES AND TECHNOLOGIES I&apos;VE BEEN LEARNING.</h1>
                     </div>
                     <div className="h-1/6 flex flex-col justify-end items-center animate-bounce">
                         <h1 className="text-center text-ssm text-white font-bold">Scroll Down!!</h1>
@@ -105,7 +105,7 @@ export default async function Page() {
                 <div className="h-screen flex flex-col items-center">
                     <div className="h-5/6 w-5/6 flex flex-col-reverse flex-wrap justify-evenly items-center">
                         <div className="flex flex-col justify-center items-center gap-4 text-center text-white">
-                            <h1 className="text-4xl font-bold">``From great skill comes great money to pay the bill.``</h1>
+                            <h1 className="text-4xl font-bold">&quot;From great skill comes great money to pay the bill.&quot;</h1>
                             <h2 className="text-xl">~~Master Oogway~~</h2>
                         </div>
                         <div>

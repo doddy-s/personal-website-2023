@@ -7,10 +7,8 @@ import GameBox from "./_components/GameBox";
 import { useState, useEffect } from "react";
 import { supabase } from "@/lib/supabaseClient";
 
-
-
 export default function Page() {
-    const [audio, setAudio] = useState(new Audio(""))
+    const [audio, setAudio] = useState<any>(null)
     useEffect(() => { setAudio(new Audio("")) }, [])
     let [bg, setBg] = useState<any>(null)
     function playAudio(song: string, bg_param: string) {
@@ -102,7 +100,7 @@ export default function Page() {
                         whileInView={{x: 0, opacity: 1}}
                         transition={{ ease: "easeInOut", duration: 0.6 }}>
                             <h1 className="text-4xl font-bold">PLAYING GAMES.</h1>
-                            <h2 className="text-xl">Scroll down and look at top 10 games I`ve played so far!</h2>
+                            <h2 className="text-xl">Scroll down and look at top 10 games I&apos;ve played so far!</h2>
                         </motion.div>
                         <div>
                             <motion.div initial={{ x: 100, opacity: 0}}
@@ -130,7 +128,7 @@ export default function Page() {
                                 <h2 className="text-l">(Click a card to play the OST, click again to stop.)</h2>
                             </div>
                             
-                            <div className="flex flex-row flex-wrap justify-evenly items-center mx-8 my-8">
+                            <div className="flex flex-row flex-wrap justify-evenly items-center gap-6 mx-8 my-8">
                                 {games.map((i:any) => (
                                     <motion.button key={i.id} onClick={() => playAudio(i.music, i.bg_color)}
                                     whileHover={{
