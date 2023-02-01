@@ -114,7 +114,7 @@ export default function Page() {
                         whileInView={{x: 0, opacity: 1}}
                         transition={{ ease: "easeInOut", duration: 0.6 }}>
                             <h1 className="text-4xl font-bold">CODING.</h1>
-                            <h2 className="text-xl">&quot;Building website from scratch is hard. With framework, it's even harder because you need to choose the best framework.&quot;</h2>
+                            <h2 className="text-xl">&quot;Building website from scratch is hard. With framework, it&apos;s even harder because you need to choose the best framework.&quot;</h2>
                         </motion.div>
                         <div>
                             <motion.div initial={{ x: 100, opacity: 0}}
