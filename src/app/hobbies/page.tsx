@@ -7,9 +7,11 @@ import GameBox from "./_components/GameBox";
 import { useState, useEffect } from "react";
 import { supabase } from "@/lib/supabaseClient";
 
-const audio = new Audio("")
+
 
 export default function Page() {
+    const [audio, setAudio] = useState(new Audio(""))
+    useEffect(() => { setAudio(new Audio("")) }, [])
     let [bg, setBg] = useState<any>(null)
     function playAudio(song: string, bg_param: string) {
         if(audio.src == song && !audio.paused) {
@@ -123,7 +125,7 @@ export default function Page() {
                 className="h-auto min-h-screen flex flex-col justify-evenly items-center duration-1000">
                     <div className="h-5/6 w-5/6 flex flex-col justify-evenly items-center">
                         <div className="flex flex-col justify-evenly items-center gap-4">
-                            <div className="flex flex-col mt-8 justify-top items-center gap-4 text-center text-white">
+                            <div className="flex flex-col mt-12 justify-top items-center gap-4 text-center text-white">
                                 <h1 className="text-4xl font-bold">TOP 10 GAMES BY DODDY</h1>
                                 <h2 className="text-l">(Click a card to play the OST, click again to stop.)</h2>
                             </div>
