@@ -104,7 +104,7 @@ export default async function Page() {
                 <div className="h-screen flex flex-col items-center">
                     <div className="h-5/6 w-5/6 flex flex-col-reverse flex-wrap justify-evenly items-center">
                         <div className="flex flex-col justify-center items-center gap-4 text-center text-white">
-                            <h1 className="text-4xl font-bold">"From great skill comes great money to pay the bill."</h1>
+                            <h1 className="text-4xl font-bold">``From great skill comes great money to pay the bill.``</h1>
                             <h2 className="text-xl">~~Master Oogway~~</h2>
                         </div>
                         <div>

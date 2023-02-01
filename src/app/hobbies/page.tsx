@@ -8,7 +8,7 @@ import { useState } from "react";
 
 const audio = new Audio
 
-export default function page() {
+export default function Page() {
     const [bg, setBg] = useState("")
     function playAudio(song: string, bgn:string) {
         if(song == audio.src) {
