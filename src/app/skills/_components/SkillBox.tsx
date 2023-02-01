@@ -10,7 +10,7 @@ export default function SkillBox({ obj }: any) {
             shadow-2xl"
             whileHover={{
                 scale: 1.1,
-                transition: { duration: 0.4 },
+                transition: { duration: 0.25 },
               }}
             whileTap={{ scale: 0.9 }}>
                 <div className="flex w-20 h-20 mr-8 items-center justify-center">

@@ -10,6 +10,7 @@ export default async function Page() {
     const desktops = await supabase.from('programming').select("*").eq("type", 1)
     const multipurposes = await supabase.from('programming').select("*").eq("type", 2)
     const databases = await supabase.from('programming').select("*").eq("type", 3)
+    console.log(webs)
     return (
         <main>
             <div className="px-8">
