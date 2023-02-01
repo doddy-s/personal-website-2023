@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function NavBar() {
     return (
-        <div className="fixed top-0 w-screen h-12 px-8 m-0 flex flex-row justify-between md:justify-start items-center gap-1 md:gap-4 bg-black bg-opacity-50 text-white shadow backdrop-blur-md">
+        <div className="fixed top-0 w-screen h-14 p-4 flex flex-row justify-between md:justify-start items-center gap-2 bg-black bg-opacity-50 text-white shadow backdrop-blur-md">
             <Icon />
             <div className="flex flex-row justify-start items-center gap-4 visible">
                 <Button content="HOME" route="/" logo="https://cdn.discordapp.com/attachments/1069729310262435860/1069729346497036388/home-door-svgrepo-com.svg" />

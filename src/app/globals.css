@@ -2,10 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-.default-font{
-  font-family: "Jetbrains Mono";
-}
-
 .text-ssm{
   font-size: 0.6rem;
   line-height: 0.8rem;
