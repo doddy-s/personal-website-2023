@@ -4,7 +4,7 @@ const nextConfig = {
     appDir: true,
   },
   images: {
-    domains: ["github.com","cdn.myanimelist.net"]
+    domains: ["github.com","cdn.discordapp.com","cdn.myanimelist.net"]
   }
 }
 

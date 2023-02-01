@@ -1,9 +1,9 @@
 import ArrowDown from "../_components/_icons/ArrowDown"
 import SkillBox from "./_components/SkillBox"
+import Image from "next/image";
 
 //N0YVc1PfXKAZDVMP
 import { supabase } from "../../lib/supabaseClient"
-const a: any = new Date().toDateString();
 
 export default async function Page() {
     const webs = await supabase.from('programming').select("*").eq("type", 0)
@@ -12,7 +12,7 @@ export default async function Page() {
     const databases = await supabase.from('programming').select("*").eq("type", 3)
     return (
         <main>
-            <div>
+            <div className="px-8">
 
                 {/* skills-landing */}
                 <div className="h-screen flex flex-col justify-evenly items-center">
@@ -93,6 +93,24 @@ export default async function Page() {
                                     obj={ i } />
                                 ))}
                             </div>
+                        </div>
+                    </div>
+                    <div className="h-1/6 flex flex-col justify-end items-center motion-safe:animate-bounce">
+                        <ArrowDown />
+                    </div>
+                </div>
+
+                {/* skills-quotes */}
+                <div className="h-screen flex flex-col items-center">
+                    <div className="h-5/6 w-5/6 flex flex-col-reverse flex-wrap justify-evenly items-center">
+                        <div className="flex flex-col justify-center items-center gap-4 text-center text-white">
+                            <h1 className="text-4xl font-bold">"From great skill comes great money to pay the bill."</h1>
+                            <h2 className="text-xl">~~Master Oogway~~</h2>
+                        </div>
+                        <div>
+                            <Image className="md:h-64 md:w-96 border-4" 
+                            src="https://cdn.discordapp.com/attachments/1069940642521825320/1070109666299887636/kung-fu-panda-master-oogway.gif" alt="Should be an icon here" 
+                            width={498} height={278} />
                         </div>
                     </div>
                     <div className="h-1/6 flex flex-col justify-end items-center">

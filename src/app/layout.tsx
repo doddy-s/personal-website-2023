@@ -17,7 +17,7 @@ export default function RootLayout({
       <head />
       <body className="bg-fixed bg-gradient-to-t from-gray-800 to-black">
         <NavBar />
-        <div className="px-8">
+        <div>
           {children}
         </div>
       </body>

@@ -7,8 +7,8 @@ export default function NavBar() {
             <div className="flex flex-row justify-start items-center gap-4 visible">
                 <Button content="HOME" route="/" logo="https://cdn.discordapp.com/attachments/1069729310262435860/1069729346497036388/home-door-svgrepo-com.svg" />
                 <Button content="SKILLS" route="/skills" logo="https://cdn.discordapp.com/attachments/1069729310262435860/1069729978020806786/brain-pictogram-5-svgrepo-com.svg" />
-                <Button content="HOBBIES" route="/" logo="https://cdn.discordapp.com/attachments/1069729310262435860/1069729747015311360/heart-svgrepo-com.svg" />
-                <Button content="CONTACTS PERSON" route="/" logo="https://cdn.discordapp.com/attachments/1069729310262435860/1069730258724606032/email-14-svgrepo-com.svg" />
+                <Button content="HOBBIES" route="/hobbies" logo="https://cdn.discordapp.com/attachments/1069729310262435860/1069729747015311360/heart-svgrepo-com.svg" />
+                <Button content="CONTACTS PERSON" route="/contacts" logo="https://cdn.discordapp.com/attachments/1069729310262435860/1069730258724606032/email-14-svgrepo-com.svg" />
             </div>
         </div>
     );
