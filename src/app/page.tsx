@@ -26,6 +26,21 @@ export default function Page() {
         </div>
 
         {/* home-skills */}
+        <div className="h-screen grid-rows-3">
+          <div className="h-3/4 p-12 flex flex-row items-center">
+            <div className="w-1/3 h-full flex flex-col justify-center items-center gap-4 text-center text-white">
+              <h1 className="text-4xl font-bold">I CAN DO WHAT I CAN DO.</h1>
+              <h2 className="text-xl">Check out my skills <a href="/skills" className="text-green-500 hover:animate-pulse">here</a>!</h2>
+            </div>
+            <div className="w-1/3 h-full border-l-2 border-r-2 flex flex-col justify-center items-center gap-4 text-center text-white">
+              
+            </div>
+            <div className="w-1/3 h-full flex flex-col justify-center items-center gap-4 text-center text-white"></div>
+          </div>
+          
+        </div>
+
+        {/* home-skills */}
         <div className="h-screen flex flex-col items-center">
           <div className="h-5/6 flex flex-col justify-center items-center gap-4 text-center text-white">
             <h1 className="text-4xl font-bold">I CAN DO WHAT I CAN DO.</h1>

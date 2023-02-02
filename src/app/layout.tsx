@@ -1,7 +1,7 @@
 import './globals.css';
 import NavBar from './_components/NavBar';
-import { JetBrains_Mono } from '@next/font/google'
-const JBM = JetBrains_Mono({subsets: ['latin']})
+import { Inter } from '@next/font/google'
+const font = Inter({subsets: ['latin']})
 
 export default function RootLayout({
   children,
@@ -9,7 +9,7 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en" className={JBM.className} style={{overflowX: 'hidden'}}>
+    <html lang="en" className={font.className} style={{overflowX: 'hidden'}}>
       {/*
         <head /> will contain the components returned by the nearest parent
         head.tsx. Find out more at https://beta.nextjs.org/docs/api-reference/file-conventions/head
