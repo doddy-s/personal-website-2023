@@ -75,9 +75,9 @@ export default function Page() {
         {/* home-cp */}
         <div className="flex h-screen flex-col items-center">
           <div className="flex h-5/6 flex-col items-center justify-center gap-4 text-center text-white">
-            <h1 className="text-4xl font-bold">FELL IN LOVE WITH ME YET?</h1>
+            <h1 className="text-4xl font-bold">DOWN FOR A BUSINESS?</h1>
             <h2 className="text-xl">
-              Here`s how to{" "}
+              Here&apos;s how to{" "}
               <a
                 href="/contacts"
                 className="text-green-500 hover:animate-pulse"

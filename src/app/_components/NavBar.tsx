@@ -2,13 +2,13 @@ import Image from "next/image";
 
 export default function NavBar() {
   return (
-    <div className="fixed top-0 flex h-14 w-screen flex-row items-center justify-between gap-2 bg-black bg-opacity-50 px-8 py-4 text-white shadow backdrop-blur-md md:justify-start">
+    <div className="fixed top-0 flex h-14 w-screen flex-row items-center justify-between gap-8 px-12 text-white backdrop-blur-sm md:justify-start">
       <Icon />
       <div className="visible flex flex-row items-center justify-start gap-4">
         <Button
           content="HOME"
           route="/"
-          logo="https://cdn.discordapp.com/attachments/1069729310262435860/1069729346497036388/home-door-svgrepo-com.svg"
+          logo="https://cdn.discordapp.com/attachments/1069729310262435860/1071878407111061614/home-door-svgrepo-com.svg"
         />
         <Button
           content="SKILLS"
@@ -32,14 +32,16 @@ export default function NavBar() {
 
 const Button = ({ content, route, logo }: any) => (
   <a href={route}>
-    <div
-      className="flex h-9 w-9 flex-row items-center justify-center rounded-lg transition duration-500 ease-in-out hover:bg-white hover:text-black 
-            md:w-auto md:px-6 md:py-6 md:pt-2 md:pb-2"
-    >
-      <p className="collapse md:visible">{content}</p>
-      <div className="visible fill-white md:collapse">
-        <Image src={logo} alt="logo" width={24} height={24} />
-      </div>
+    <div className="flex h-9 w-9 items-center justify-center rounded-lg duration-500 ease-in-out hover:bg-white hover:text-black md:w-auto">
+      <p className="hidden px-8 md:block">{content}</p>{" "}
+      <Image
+        id={content}
+        src={logo}
+        alt="logo"
+        width={24}
+        height={24}
+        className="visible top-1/2 table-cell align-middle md:hidden"
+      />
     </div>
   </a>
 );
